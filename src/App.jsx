@@ -3,7 +3,8 @@ import "./App.css";
 import MyFooter from "./components/MyFooter";
 import MyNav from "./components/MyNav";
 import Welcome from "./components/Welcome";
-import AllTheBooks from "./components/AllTheBooks";
+import BookList from "./components/BookList";
+import fantasy from "./components/dataBooks/fantasy.json";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <MyNav></MyNav>
       <Welcome></Welcome>
 
-      <AllTheBooks></AllTheBooks>
+      <BookList books={fantasy}></BookList>
 
       <MyFooter></MyFooter>
     </>
